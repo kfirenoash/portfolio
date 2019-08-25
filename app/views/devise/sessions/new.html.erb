@@ -2,10 +2,9 @@
 <section class="slice slice-lg sct-color-1">
     <div class="container">
         <div class="row">
+          <div class="col-md-4 col-md-offset-4">
 
-                <div class="form-user style-1 rounded has-shadow-1">
-
-                        <h2 class="form-header-title">ログイン</h2>
+                        <h2 class="form-header-title">ログイン</h2><br>
                     <div class="form-body">
                       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                         <div class="form-group has-icon">
@@ -16,12 +15,13 @@
                         <div class="form-group has-icon">
                           <label class="control-label sr-only" for="inputEmail"></label>
                           <%= f.password_field :password, autcomplete: "current-password",  class: "form-control", id:"inputmail", palaceholder:"パスワード" %>
-                        </div>
+                        </div><br>
                         <%= f.submit "サインイン", class: "btn btn-primary" %>
                       <% end %>
 
                     </div>
-                </div>
+          </div>
+          </div>
         </div>
     </div>
 </section>
